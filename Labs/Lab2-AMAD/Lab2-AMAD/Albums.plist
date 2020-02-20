@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>album</key>
+		<string>17</string>
+		<key>songs</key>
+		<array>
+			<string>Jocelyn Flores</string>
+			<string>Depression and Obsession</string>
+		</array>
+	</dict>
+	<dict>
+		<key>album</key>
+		<string>Cozy Tapes</string>
+		<key>songs</key>
+		<array/>
+	</dict>
+	<dict>
+		<key>album</key>
+		<string>Testing</string>
+		<key>songs</key>
+		<array>
+			<string>Praise The Lord</string>
+			<string>ASAP Forever</string>
+		</array>
+	</dict>
+	<dict>
+		<key>album</key>
+		<string>Abbey Road</string>
+		<key>songs</key>
+		<array>
+			<string>Come Together</string>
+			<string>Here Comes The Sun</string>
+		</array>
+	</dict>
+	<dict>
+		<key>album</key>
+		<string>Illmatic</string>
+		<key>songs</key>
+		<array>
+			<string>NY State of Mind</string>
+			<string>The World Is Yours</string>
+		</array>
+	</dict>
+	<dict>
+		<key>album</key>
+		<string>The Wall</string>
+		<key>songs</key>
+		<array>
+			<string>Hey You</string>
+			<string>Mother</string>
+		</array>
+	</dict>
+	<dict>
+		<key>album</key>
+		<string>The Anthology</string>
+		<key>songs</key>
+		<array>
+			<string>Electric Relaxation</string>
+			<string>Can I Kick It</string>
+		</array>
+	</dict>
+</array>
+</plist>
