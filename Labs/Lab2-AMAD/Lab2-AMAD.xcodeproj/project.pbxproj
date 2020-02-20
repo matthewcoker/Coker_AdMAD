@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F348338323FF05E500B772B7 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F348338223FF05E500B772B7 /* SearchResultsController.swift */; };
 		F38E713723FE25E400611880 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38E713623FE25E400611880 /* AppDelegate.swift */; };
 		F38E713923FE25E400611880 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38E713823FE25E400611880 /* SceneDelegate.swift */; };
 		F38E713B23FE25E400611880 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38E713A23FE25E400611880 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F348338223FF05E500B772B7 /* SearchResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
 		F38E713323FE25E400611880 /* Lab2-AMAD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lab2-AMAD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F38E713623FE25E400611880 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F38E713823FE25E400611880 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				F38E713623FE25E400611880 /* AppDelegate.swift */,
 				F38E713823FE25E400611880 /* SceneDelegate.swift */,
 				F38E713A23FE25E400611880 /* ViewController.swift */,
+				F348338223FF05E500B772B7 /* SearchResultsController.swift */,
 				F38E714E23FE684300611880 /* DetailViewController.swift */,
 				F38E713C23FE25E400611880 /* Main.storyboard */,
 				F38E715023FE7FAC00611880 /* AddSongViewController.swift */,
@@ -154,6 +157,7 @@
 				F38E713B23FE25E400611880 /* ViewController.swift in Sources */,
 				F38E715123FE7FAC00611880 /* AddSongViewController.swift in Sources */,
 				F38E713723FE25E400611880 /* AppDelegate.swift in Sources */,
+				F348338323FF05E500B772B7 /* SearchResultsController.swift in Sources */,
 				F38E714F23FE684300611880 /* DetailViewController.swift in Sources */,
 				F38E713923FE25E400611880 /* SceneDelegate.swift in Sources */,
 				F38E714D23FE4BEF00611880 /* Albums.swift in Sources */,

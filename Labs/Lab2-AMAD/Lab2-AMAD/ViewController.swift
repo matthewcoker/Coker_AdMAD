@@ -7,15 +7,29 @@
 //
 
 import UIKit
-class ViewController: UITableViewController {
+class ViewController: UITableViewController, UISearchBarDelegate {
+    
+    var searchController = UISearchController()
     var albumsList = [String]()
     var albumsDataController = AlbumsDataController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         do {
             try albumsDataController.loadData()
             albumsList = albumsDataController.getAlbums()
+            let resultsController = SearchResultsController()
+            resultsController.allWords = albumsList
+            //tell the search controller to use our
+            searchController = UISearchController (searchResultsController: resultsController)
+            //add some placeholder text
+            searchController.searchBar.placeholder = "Filter"
+            searchController.searchBar.sizeToFit() //make it fit the parent view
+            //add a header that consists of the search bar that belongs to our search controller
+            tableView.tableHeaderView = searchController.searchBar
+            //tell it which object will be updating the results
+            searchController.searchResultsUpdater = resultsController
         } catch {
             print (error)
         }
@@ -45,5 +59,4 @@ class ViewController: UITableViewController {
             }
         }
     }
-    
 }
