@@ -11,5 +11,6 @@ pod 'Firebase/Firestore'
 pod 'Firebase/Auth'
 pod 'GoogleSignIn'
 pod 'FirebaseFirestoreSwift'
+pod 'Firebase/Database'
 
 end

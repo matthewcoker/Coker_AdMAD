@@ -7,12 +7,12 @@
 //
 
 import UIKit
- 
+import FirebaseDatabase
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     @IBOutlet weak var itemTableView: UITableView!
-    var items: [String] = ["Get Groceries", "Pick up Grandma", "Go to the Gym"]
+    var items: [String] = ["Get Groceries", "Get N94", "Hit the gym"]
 
     
         override func viewDidLoad() {
@@ -67,10 +67,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             if cell.isChecked == false {
                 cell.checkMark.image = UIImage(named: "checkMark.png")
                 cell.isChecked = true
+                let ref = Database.database().reference(withPath: "items").child("DZX0J9scxYRhp1MuEyLF").child(items[indexPath.row])
+                ref.updateChildValues(["IsChecked": true])
             }
             else {
                 cell.checkMark.image = nil
                 cell.isChecked = false
+                let ref = Database.database().reference(withPath: "items").child("DZX0J9scxYRhp1MuEyLF").child(items[indexPath.row])
+                ref.updateChildValues(["IsChecked": false])
             }
             
         }
