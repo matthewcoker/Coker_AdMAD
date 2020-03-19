@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passWordTextField: UITextField!
     
+    var uid: String = ""
     
     
     override func viewDidLoad() {
@@ -30,8 +31,8 @@ class ViewController: UIViewController {
                     print("There was an error")
                 }
                 else {
-                    let uid = result?.user.uid
-                    let ref = Database.database().reference(withPath: "users").child(uid!)
+                    self.uid = (result?.user.uid)!
+                    let ref = Database.database().reference(withPath: "users").child(self.uid)
                     ref.setValue(["username" : self.userNameTextField.text!])
                     ref.setValue(["password": self.passWordTextField.text!])
                 }
@@ -46,9 +47,8 @@ class ViewController: UIViewController {
                     print ("Thats not good!")
                 }
                 else {
-                    //let uid = result?.user.uid
+                    self.uid = (result?.user.uid)!
                     
-
                 }
             }
         }
