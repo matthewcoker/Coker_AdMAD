@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B790130BE234BFC6E338522C /* Pods_Lab5_AMAD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FA55BDACA96581AB4D6AC0 /* Pods_Lab5_AMAD.framework */; };
+		F30487F82433F422004041E4 /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30487F72433F422004041E4 /* TodoList.swift */; };
+		F30487FA24342312004041E4 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30487F924342312004041E4 /* ItemCell.swift */; };
 		F353818D24230E7300563367 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F353818C24230E7300563367 /* AppDelegate.swift */; };
 		F353818F24230E7300563367 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F353818E24230E7300563367 /* SceneDelegate.swift */; };
 		F353819124230E7300563367 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F353819024230E7300563367 /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 		08FA55BDACA96581AB4D6AC0 /* Pods_Lab5_AMAD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lab5_AMAD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43171CE6EAF7E79364575453 /* Pods-Lab5-AMAD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lab5-AMAD.debug.xcconfig"; path = "Target Support Files/Pods-Lab5-AMAD/Pods-Lab5-AMAD.debug.xcconfig"; sourceTree = "<group>"; };
 		E1354EA48B5E3C9A7D05023A /* Pods-Lab5-AMAD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lab5-AMAD.release.xcconfig"; path = "Target Support Files/Pods-Lab5-AMAD/Pods-Lab5-AMAD.release.xcconfig"; sourceTree = "<group>"; };
+		F30487F72433F422004041E4 /* TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
+		F30487F924342312004041E4 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		F353818924230E7300563367 /* Lab5-AMAD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lab5-AMAD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F353818C24230E7300563367 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F353818E24230E7300563367 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +90,8 @@
 				F353818E24230E7300563367 /* SceneDelegate.swift */,
 				F353819024230E7300563367 /* ViewController.swift */,
 				F353819224230E7300563367 /* Main.storyboard */,
+				F30487F924342312004041E4 /* ItemCell.swift */,
+				F30487F72433F422004041E4 /* TodoList.swift */,
 				F353819524230E7400563367 /* Assets.xcassets */,
 				F353819724230E7400563367 /* LaunchScreen.storyboard */,
 				F353819A24230E7400563367 /* Info.plist */,
@@ -213,6 +219,8 @@
 				F353819124230E7300563367 /* ViewController.swift in Sources */,
 				F353818D24230E7300563367 /* AppDelegate.swift in Sources */,
 				F353818F24230E7300563367 /* SceneDelegate.swift in Sources */,
+				F30487F82433F422004041E4 /* TodoList.swift in Sources */,
+				F30487FA24342312004041E4 /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

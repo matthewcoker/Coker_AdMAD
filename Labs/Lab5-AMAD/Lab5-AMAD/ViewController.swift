@@ -33,8 +33,8 @@ class ViewController: UIViewController {
                 else {
                     self.uid = (result?.user.uid)!
                     let ref = Database.database().reference(withPath: "users").child(self.uid)
-                    ref.setValue(["username" : self.userNameTextField.text!])
-                    ref.setValue(["password": self.passWordTextField.text!])
+                    ref.setValue(["username" : self.userNameTextField.text!, "password": self.passWordTextField.text!])
+                    self.performSegue(withIdentifier: "signInSegue", sender: self)
                 }
             }
         }
@@ -42,18 +42,22 @@ class ViewController: UIViewController {
     
     @IBAction func signIn(_ sender: Any) {
         if userNameTextField.text != nil && passWordTextField.text != nil {
-            Auth.auth().createUser(withEmail: userNameTextField.text!, password: passWordTextField.text!) { (result, error) in
+            Auth.auth().signIn(withEmail: userNameTextField.text!, password: passWordTextField.text!) { (result, error) in
                 if error != nil {
                     print ("Thats not good!")
                 }
                 else {
                     self.uid = (result?.user.uid)!
-                    
+                    self.performSegue(withIdentifier: "signInSegue", sender: self)
                 }
             }
         }
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nav = segue.destination as! UINavigationController
+        let todoListController = nav.topViewController as! TodoList
+        todoListController.userID = uid
+    }
 }
 
